@@ -15,12 +15,12 @@ while keepGoing == 'y':
     # Setting while loop for adding bottles and payout
     while counter < 8:
         todayBottles = int(input(f'Enter the number of bottles you collected on day {counter}: '))
-        totalBottles += today_bottles
-        totalPayout = total_bottles * .10
+        totalBottles += todayBottles
+        totalPayout = totalBottles * .10
         counter += 1
     
     # results   
-    print(f'You collected {total_bottles} bottles.\nYou received ${total_payout:.2f}.') 
+    print(f'You collected {totalBottles} bottles.\nYou received ${totalPayout:.2f}.') 
     
     # Reset
     totalBottles = 0 
